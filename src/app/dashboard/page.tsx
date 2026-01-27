@@ -16,6 +16,9 @@ import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
 import { createClient } from '@/lib/supabase/server';
 import { complianceChecklists } from '@/lib/compliance-data';
+import type { Database } from '@/types/database';
+
+type Profile = Database['public']['Tables']['profiles']['Row'];
 
 export default async function DashboardPage() {
   const supabase = await createClient();
@@ -29,11 +32,13 @@ export default async function DashboardPage() {
   }
 
   // Get user profile
-  const { data: profile } = await supabase
+  const { data } = await supabase
     .from('profiles')
     .select('*')
     .eq('id', user.id)
     .single();
+
+  const profile = data as Profile | null;
 
   // In production, you would fetch actual progress from the database
   // For now, we'll use mock data
