@@ -223,9 +223,9 @@ export const complianceChecklists: ComplianceChecklist[] = [
     description: 'SB 523 reproductive health decision-making protections',
     category: 'Policy',
     items: [
-      { id: 'policy-update', title: 'Update Anti-Discrimination Policy', description: 'Include reproductive health decision-making', required: true, category: 'Policy' },
-      { id: 'training-update', title: 'Update Training Materials', description: 'Include reproductive rights in harassment training', required: true, category: 'Training' },
-      { id: 'accommodation-process', title: 'Accommodation Process', description: 'Process for reproductive health accommodations', required: true, category: 'Accommodation' },
+      { id: 'repro-policy-update', title: 'Update Anti-Discrimination Policy', description: 'Include reproductive health decision-making', required: true, category: 'Policy' },
+      { id: 'repro-training-update', title: 'Update Training Materials', description: 'Include reproductive rights in harassment training', required: true, category: 'Training' },
+      { id: 'repro-accommodation-process', title: 'Accommodation Process', description: 'Process for reproductive health accommodations', required: true, category: 'Accommodation' },
     ],
   },
   {
@@ -236,8 +236,8 @@ export const complianceChecklists: ComplianceChecklist[] = [
     items: [
       { id: 'exposure-notification', title: 'Exposure Notification', description: 'Notify employees of COVID-19 exposure', required: true, category: 'Safety' },
       { id: 'testing-policy', title: 'Testing Policy', description: 'COVID testing requirements if applicable', required: false, category: 'Policy' },
-      { id: 'sick-leave', title: 'COVID Sick Leave', description: 'Provide required COVID-related sick leave', required: true, category: 'Leave' },
-      { id: 'record-keeping', title: 'COVID Record Keeping', description: 'Maintain required exposure records', required: true, category: 'Records' },
+      { id: 'covid-sick-leave', title: 'COVID Sick Leave', description: 'Provide required COVID-related sick leave', required: true, category: 'Leave' },
+      { id: 'covid-record-keeping', title: 'COVID Record Keeping', description: 'Maintain required exposure records', required: true, category: 'Records' },
     ],
   },
   {
@@ -249,7 +249,7 @@ export const complianceChecklists: ComplianceChecklist[] = [
       { id: 'heat-illness', title: 'Heat Illness Prevention', description: 'Written program for outdoor work', required: true, category: 'Program' },
       { id: 'water-shade', title: 'Water and Shade', description: 'Provide water, shade, and rest breaks', required: true, category: 'Equipment' },
       { id: 'wildfire-smoke', title: 'Wildfire Smoke Protection', description: 'AQI monitoring and N95 respirators', required: true, category: 'Safety' },
-      { id: 'training', title: 'Heat and Smoke Training', description: 'Train employees on hazard recognition', required: true, category: 'Training' },
+      { id: 'climate-training', title: 'Heat and Smoke Training', description: 'Train employees on hazard recognition', required: true, category: 'Training' },
     ],
   },
   {
@@ -259,7 +259,7 @@ export const complianceChecklists: ComplianceChecklist[] = [
     category: 'Safety',
     items: [
       { id: 'wvpp', title: 'Violence Prevention Plan', description: 'Written workplace violence prevention plan', required: true, category: 'Program' },
-      { id: 'training', title: 'Violence Prevention Training', description: 'Train employees on prevention and response', required: true, category: 'Training' },
+      { id: 'violence-training', title: 'Violence Prevention Training', description: 'Train employees on prevention and response', required: true, category: 'Training' },
       { id: 'incident-log', title: 'Violent Incident Log', description: 'Maintain log of workplace violence incidents', required: true, category: 'Records' },
       { id: 'hazard-assessment', title: 'Hazard Assessment', description: 'Assess workplace violence risks', required: true, category: 'Assessment' },
     ],
@@ -272,7 +272,7 @@ export const complianceChecklists: ComplianceChecklist[] = [
     items: [
       { id: 'written-contract', title: 'Written Contract', description: 'Written agreement for services $250+', required: true, category: 'Contract' },
       { id: 'payment-terms', title: 'Payment Terms', description: 'Pay within 30 days or per contract', required: true, category: 'Payment' },
-      { id: 'record-keeping', title: 'Contract Records', description: 'Retain contracts for 4 years', required: true, category: 'Records' },
+      { id: 'freelance-record-keeping', title: 'Contract Records', description: 'Retain contracts for 4 years', required: true, category: 'Records' },
       { id: 'no-retaliation', title: 'Anti-Retaliation', description: 'No retaliation for exercising rights', required: true, category: 'Policy' },
     ],
   },
